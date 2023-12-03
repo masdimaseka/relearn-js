@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const value1 = parseInt("1"); // konversi string to integer
+      const value2 = 1;
+      const sum = value1 + value2;
+
+      console.log(sum);
+
+      console.log(parseInt(sum)); // membulatkan (menghiraukan bilangan pecahahan)
+      console.log(parseFloat(sum)); // meruabah menjadi pecahan
+      console.log(Number(sum)); // bisa flexible (menjadi bilangan bulat atau pecahan)
+
+      const a = 1;
+      const b = 1;
+      const sum1 = a.toString() + b.toString(); // konversi number to string
+
+      console.log(sum1);
+
+      // NaN (Not a Number)
+      //   operasi apapun yang terdapat nan, maka hasilnya juga akan nan lagi
+
+      // masih mentolelir jika didepan masih berupa angka
+      console.log(parseInt("1dimas"));
+      console.log(parseFloat("2dimas"));
+
+      // tidak bisa mentolelir kesalahan sedikit pun, hasilnya tetap nan
+      console.log(Number("3dimas"));
+
+      const first = Number("salah");
+      console.log(isNaN(first)); // mengecek nan atau tidak
+    </script>
+  </body>
+</html>

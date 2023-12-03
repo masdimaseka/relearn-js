@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nama = "dimas eka putra";
+      const nilai = 90;
+      const template = `Name : ${nama}, Nilai : ${nilai}, Keterangan : ${
+        nilai > 70
+      }`;
+
+      console.log(template);
+
+      const multiline = `Hallo, Nama saya dimas
+prodi Informatika
+angkatan 2023
+      `;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>
