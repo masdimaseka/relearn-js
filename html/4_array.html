@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arrayKosong = []; // bisa memasukkan tipe data apopun
+      let names = ["dimas", "eka", "putra"];
+
+      names.push("sahtio");
+      console.table(names);
+
+      console.log(names[0]);
+      names[1] = "dwi";
+      console.table(names);
+      console.log(names.length);
+
+      delete names[2]; // menghapus tapi length dari arraynya tidak berkurang
+      console.table(names);
+      console.log(names.length);
+
+      // names.splice(2, 1); // menghapus tapi length dari arraynya berkurang
+      // console.table(names);
+      // console.log(names.length);
+    </script>
+  </body>
+</html>

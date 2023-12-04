@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ternary : operasi lebih singkat untuk pengkondisiian
+
+      const a = 1;
+      const b = 2;
+
+      const bigger = a > b ? "Benar" : "Salah";
+
+      console.log(bigger);
+
+      //   nullish coalescing : mirip seperti ternary, hanya ketika bernilai null atau undefined
+
+      let parameter;
+
+      let data = parameter;
+
+      data = parameter ?? "Default";
+
+      console.log(data);
+    </script>
+  </body>
+</html>
