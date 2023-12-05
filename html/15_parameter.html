@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* parameter pada function bersifat optional
+         apabila parameter tidak diberikan nilai, maka ketika dipanggil akan berinilai undefined
+      */
+
+      /* default value parameter
+         menset default value dari sebuah parameter menjadi selain undefined
+      */
+
+      function register(name, gender = "none") {
+        console.log(name);
+        console.log(gender);
+      }
+
+      register();
+
+      /* rest parameter
+         : 1 parameter yang menampung banyak data yang akan dikonversi secara otomatis menjadi array
+         : rest parameter harus diletakkan dipaling akhir, dan dalam 1 function hanya ada 1 rest parameter
+      */
+
+      function sum(name, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        console.log(`name : ${name}, total : ${total}`);
+      }
+
+      sum("dimas", 9, 1, 2, 3);
+
+      /* spread syntax
+       : ketika ingin megirimkan rest parameter langsung dalam bentuk array
+      */
+      const nilai = [1, 1, 1, 1, 1, 1];
+
+      sum("dimas", ...nilai);
+
+      /*arguments object = rest parameter
+       : mengembil data semua data parameter dengan menggunakan object bernama arguments
+       : cara lama untuk melakukan seperti rest parameter
+      */
+      function oldSum() {
+        let total = 0;
+        for (const item of arguments) {
+          total += item;
+        }
+        console.log(total);
+      }
+
+      oldSum(1, 1, 1, 1, 1);
+    </script>
+  </body>
+</html>

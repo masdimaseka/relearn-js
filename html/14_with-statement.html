@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            with statement : fitur yang digunakan untuk menurukan sebuah scope data
+
+        */
+
+      // tanpa with statement
+      const person = {
+        nama: "dimas",
+        umur: 11,
+      };
+
+      console.log(person.nama);
+      console.log(person.umur);
+
+      // dengan with statement
+      with (person) {
+        console.log(nama);
+        console.log(umur);
+      }
+
+      /* with statement tidak disarankan dan tidak direkomendasikan
+        : karna membuat kode menjadi ambigu 
+      */
+    </script>
+  </body>
+</html>
