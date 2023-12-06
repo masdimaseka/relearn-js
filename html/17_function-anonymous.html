@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // anonymous function = function tanpa nama
+      let say = function (name) {
+        console.log(`Hello ${name}`);
+      };
+
+      say("Eka");
+
+      //   anonymous function di parameter
+      function giveName(callback) {
+        callback("eka");
+      }
+
+      giveName(function (name) {
+        console.log(`hello ${name}`);
+      });
+    </script>
+  </body>
+</html>
