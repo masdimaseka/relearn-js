@@ -7,18 +7,15 @@
   </head>
   <body>
     <script>
-      function outer() {
-        function inner() {
-          console.info("inner");
+      // function recursive : function memanggil diri sendiri
+
+      function recursive(v) {
+        if (v === 1) {
+          return 1;
+        } else {
+          return value * recursive(v - 1); // recursive
         }
-
-        inner();
-        inner();
       }
-
-      outer();
-      outer();
-      // inner(); // tidak bisa diakses
     </script>
   </body>
 </html>

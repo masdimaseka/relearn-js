@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // scope : area akses sebuah data
+      /*
+        -global scope
+        -local scope : tidak dapat diakses di luar local scope
+      */
+
+      //   global scope
+
+      let counter = 0;
+
+      function hitMe() {
+        // local scope hitme
+        counter++;
+      }
+
+      hitMe();
+      hitMe();
+
+      //   nested function
+
+      function first() {
+        let a = 1;
+        function second() {
+          console.log(a); // can access a
+          let b = 1;
+        }
+        console.log(b); // can't access b
+      }
+    </script>
+  </body>
+</html>
